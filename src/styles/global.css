@@ -1,0 +1,484 @@
+/* GLOBAL CSS FOR ANUKAI */
+
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+/*****************************************************/
+
+/* RESET CSS */
+
+/*****************************************************/
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*TODO: Remove outline: none from global */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  height: 100vh;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* misc css classes */
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+/* flex global classes */
+
+.flex {
+  display: flex;
+}
+
+.d-flex-row {
+  flex-direction: row;
+}
+
+.d-flex-column {
+  flex-direction: column;
+}
+
+.d-flex-aitems {
+  align-items: center;
+}
+
+.d-flex-afstart {
+  align-items: flex-start;
+}
+
+.d-flex-jcenter {
+  justify-content: center;
+}
+
+.d-flex-sbetween {
+  justify-content: space-between;
+}
+
+.d-flex-saround {
+  justify-content: space-around;
+}
+
+.d-flex-sevenly {
+  justify-content: space-evenly;
+}
+
+/* device specific classes */
+
+.mob--only {
+  display: block;
+}
+
+.desktop--only {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .mob--only {
+    display: none;
+  }
+  .desktop--only {
+    display: block;
+  }
+}
+
+/* SPACERS */
+
+.mt4 {
+  margin-top: 4px;
+}
+
+.mt8 {
+  margin-top: 8px;
+}
+
+.mt12 {
+  margin-top: 12px;
+}
+
+.mt16 {
+  margin-top: 16px;
+}
+
+.mt24 {
+  margin-top: 24px;
+}
+
+.mt32 {
+  margin-top: 32px;
+}
+
+.mt48 {
+  margin-top: 48px;
+}
+
+.mt64 {
+  margin-top: 64px;
+}
+
+.ml4 {
+  margin-left: 4px !important;
+}
+
+.ml8 {
+  margin-left: 8px;
+}
+
+.ml16 {
+  margin-left: 16px;
+}
+
+.ml24 {
+  margin-left: 24px;
+}
+
+.mr4 {
+  margin-right: 4px;
+}
+
+.mr8 {
+  margin-right: 8px;
+}
+
+.mr16 {
+  margin-right: 16px;
+}
+
+.mr24 {
+  margin-right: 24px;
+}
+
+.mb4 {
+  margin-bottom: 4px;
+}
+
+.mb6 {
+  margin-bottom: 4px;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.mb12 {
+  margin-bottom: 12px;
+}
+
+.mb14 {
+  margin-bottom: 14px;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.mb24 {
+  margin-bottom: 24px;
+}
+
+.mb32 {
+  margin-bottom: 32px;
+}
+
+.mb48 {
+  margin-bottom: 48px;
+}
+
+.mb64 {
+  margin-bottom: 64px;
+}
+
+.pt8 {
+  padding-top: 8px;
+}
+
+.p16 {
+  padding: 16px;
+}
+
+.pt16 {
+  padding-top: 16px;
+}
+
+.pt24 {
+  padding-top: 24px;
+}
+
+.pt32 {
+  padding-top: 32px;
+}
+
+.pt64 {
+  padding-top: 64px;
+}
+
+.pb4 {
+  padding-bottom: 4px;
+}
+
+.pb8 {
+  padding-bottom: 8px;
+}
+
+.pb12 {
+  padding-bottom: 12px;
+}
+
+.pb16 {
+  padding-bottom: 16px;
+}
+
+.pb24 {
+  padding-bottom: 24px;
+}
+
+.pb32 {
+  padding-bottom: 32px;
+}
+
+.pb64 {
+  padding-bottom: 64px;
+}
+
+.pl4 {
+  padding-left: 4px;
+}
+
+.pl8 {
+  padding-left: 8px;
+}
+
+.pl16 {
+  padding-left: 16px;
+}
+
+.pl32 {
+  padding-left: 32px;
+}
+
+.pr8 {
+  padding-right: 8px;
+}
+
+.pr16 {
+  padding-right: 16px;
+}
+
+.pbox {
+  padding: 24px 32px;
+}
+
+.pbox-sm {
+  padding: 12px 8px;
+}
+
+.p32 {
+  padding: 32px;
+}
+
+.ph24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.pv16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.ph16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+/*  animations global  */
+
+.fadeInUp {
+  animation: 0.4s ease-out fadeIn 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* themes */
+
+.bg-light {
+  background-color: #f5f5f5;
+}
+
+.bg-dark {
+  background-color: #212121;
+}
+
+/* z-indexex */
+
+.z-5 {
+  z-index: 5;
+}
